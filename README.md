@@ -36,7 +36,7 @@ Here are the links to my assignments:
   <img src="./Front-End/Assigment-05/screenshot02.png" width="200" style="margin-right: 10px;" />
   <img src="./Front-End/Assigment-05/screenshot03.png" width="200" style="margin-right: 10px;" />
   <img src="./Front-End/Assigment-05/screenshot04.png" width="200" style="margin-right: 10px;" />
-</div>
+  </div>
 
 ### Back-End Assignments:
 - ❌  No Back-End assignments yet.
