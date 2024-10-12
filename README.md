@@ -16,28 +16,49 @@ Here are the links to my assignments:
 ### Front-End Assignments:
 - 🔗 [Assignment 01: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-01/)
   <details>
-    <summary>screensgot</summary>
+    <summary>screenshot</summary>
     ![Assignment 01 Screenshot](./Front-End/Assigment-01/screenshot01.png)
   </details>
 
     
 - 🔗 [Assignment 02: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-02/)
-  - ![Assignment 02 Screenshot](./Front-End/Assigment-02/screenshot01.png)
+  <details>
+    <summary>screenshot</summary>
+    ![Assignment 02 Screenshot](./Front-End/Assigment-02/screenshot01.png)
+  </details>
  
     
 - 🔗 [Assignment 03: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-03/)
-  - ![Assignment 03 Screenshot](./Front-End/Assigment-03/screenshot01.png)
+  <details>
+    <summary>screenshot</summary>
+    ![Assignment 03 Screenshot](./Front-End/Assigment-03/screenshot01.png)
+  </details>
  
     
 - 🔗 [Assignment 04: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-04/)
-  - ![Assignment 04 Screenshot](./Front-End/Assigment-04/screenshot01.png)
+  <details>
+    <summary>screenshot</summary>
+    ![Assignment 04 Screenshot](./Front-End/Assigment-04/screenshot01.png)
+  </details>
 
     
 - 🔗 [Assignment 05: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-05/)
-  - ![Assignment 04 Screenshot](./Front-End/Assigment-05/screenshot01.png)
-  - ![Assignment 04 Screenshot](./Front-End/Assigment-05/screenshot02.png)
-  - ![Assignment 04 Screenshot](./Front-End/Assigment-05/screenshot03.png)
-  - ![Assignment 04 Screenshot](./Front-End/Assigment-05/screenshot04.png)
+  <details>
+    <summary>screenshot light laptop</summary>
+    ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot01.png)
+  </details>
+  <details>
+    <summary>screenshot dark laptop</summary>
+    ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot02.png)
+  </details>
+  <details>
+    <summary>screenshot light mobile</summary>
+    ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot03.png)
+  </details>
+  <details>
+    <summary>screenshot dark mobile</summary>
+    ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot04.png)
+  </details>
 
 
 ### Back-End Assignments:
