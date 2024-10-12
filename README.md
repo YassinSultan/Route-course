@@ -70,3 +70,8 @@ Here are the links to my assignments:
 - ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 Feel free to explore each project and see the live demo by clicking the links!
+
+## 🌐 Social Media
+- [LinkedIn](https://www.linkedin.com/in/yassin-sultan)
+- [GitHub](https://github.com/YassinSultan)
+- [WhatsApp](https://wa.me/201129693575?text=Hello%20Yassin!)
