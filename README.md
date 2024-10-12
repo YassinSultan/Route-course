@@ -15,7 +15,10 @@ Here are the links to my assignments:
 
 ### Front-End Assignments:
 - 🔗 [Assignment 01: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-01/)
-  - ![Assignment 01 Screenshot](./Front-End/Assigment-01/screenshot01.png)
+  <details>
+    <summary>screensgot</summary>
+    ![Assignment 01 Screenshot](./Front-End/Assigment-01/screenshot01.png)
+  </details>
 
     
 - 🔗 [Assignment 02: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-02/)
