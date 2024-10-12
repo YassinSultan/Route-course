@@ -1,7 +1,15 @@
-# Route-Course
-This repository contains assignments for the **Full-Stack Route Course**.
+# Full-Stack Route Course Assignments 💻
 
-## Assignments
+Welcome to my repository! Here, you will find all my completed assignments from the **Full-Stack Route Course**. Each assignment covers key web development concepts, ranging from front-end to back-end tasks.
+
+## 🚀 Course Overview
+The Route Full-Stack course provides training in front-end and back-end development. It covers:
+- HTML, CSS, and JavaScript
+- Responsive design and advanced layout techniques
+- JavaScript frameworks and libraries
+- Back-end development with databases and server-side languages
+
+## 📂 Assignments
 
 Here are the links to my assignments:
 
@@ -24,9 +32,16 @@ Here are the links to my assignments:
     
 - 🔗 [Assignment 05: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-05/)
   - ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot01.png)
-  - ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot01.png)
-  - ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot01.png)
-  - ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot01.png) 
+  - ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot02.png)
+  - ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot03.png)
+  - ![Assignment 05 Screenshot](./Front-End/Assigment-05/screenshot04.png) 
 
 ### Back-End Assignments:
 - ❌  No Back-End assignments yet.
+
+## 🛠️ Technologies Used
+- ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+Feel free to explore each project and see the live demo by clicking the links!
