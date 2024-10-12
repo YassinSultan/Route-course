@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assigment 2</title>
+</head>
+
+<body>
+    <fieldset style="background-color: red;">
+        <legend style="background-color: blue; color: white;">Personal Data</legend>
+        <form>
+            <fieldset style="background-color: yellow;">
+                <legend style="background-color: blue; color: white;">Your Name</legend>
+                <table>
+                    <tr>
+                        <td><label for="firstName">First Name</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="firstName" id="firstName" placeholder="EX. Yassin" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="secName">Second Name</label></td>
+                        <td>:</td>
+                        <td><input type="text" name="secName" id="secName" placeholder="EX. Gamal"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <td><label for="phone">Your Phone</label></td>
+                    <td>:</td>
+                    <td><input type="tel" name="phone" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td>:</td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>:</td>
+                    <td><input type="password" name="password" id="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="rePassword">Re-Password</label></td>
+                    <td>:</td>
+                    <td><input type="password" name="rePassword" id="rePassword" required></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <td><input type="radio" name="gender" id="male" value="male"></td>
+                    <td><label for="male">Male</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender" id="female" value="female"></td>
+                    <td><label for="female">Female</label></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="favLang" id="arabic" value="arabic"></td>
+                    <td><label for="arabic">Arabic</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="favLang" id="english" value="english"></td>
+                    <td><label for="english">English</label></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <select name="university" id="select">
+                <optgroup label="Cairo">
+                    <option value="ainShams">Ain Shams Univeristy</option>
+                    <option value="British">The British University</option>
+                </optgroup>
+                <optgroup label="Giza">
+                    <option value="cairo">Cairo university</option>
+                    <option value="october">6th October university</option>
+                    <option value="nile">Nile university</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <button type="submit"><img src="submit.png" alt="submit button" width="120"></button>
+        </form>
+    </fieldset>
+</body>
+
+</html>
