@@ -31,12 +31,12 @@ Here are the links to my assignments:
 
     
 - 🔗 [Assignment 05: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-05/)
-- <p float="left">
+- <div style="display: flex; align-items: flex-start; flex-wrap:wrap;">
     <img src="./Front-End/Assigment-05/screenshot01.png" width="200" />
     <img src="./Front-End/Assigment-05/screenshot02.png" width="200" />
     <img src="./Front-End/Assigment-05/screenshot03.png" width="200" />
     <img src="./Front-End/Assigment-05/screenshot04.png" width="200" />
-</p>
+</div>
 
 ### Back-End Assignments:
 - ❌  No Back-End assignments yet.
