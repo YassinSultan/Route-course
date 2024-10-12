@@ -18,6 +18,7 @@ Here are the links to my assignments:
   <details>
     <summary>screenshot</summary>
     ![Assignment 01 Screenshot](./Front-End/Assigment-01/screenshot01.png)
+    <img src="./Front-End/Assigment-01/screenshot01.png" width="200"">
   </details>
 
     
