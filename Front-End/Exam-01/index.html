@@ -25,60 +25,67 @@
     <title>Daniels</title>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
-    <nav id="navbar" class="navbar navbar-expand-md py-2 navbar-light bg-white fixed-top">
+<body data-bs-spy="scroll" data-bs-target="#topNavbar">
+    <a href="#" aria-label="link"></a>
+    <nav id="topNavbar" class="navbar navbar-expand-lg py-2 navbar-light bg-white fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold text-uppercase" href="#">Daniels</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold text-uppercase" href="#" aria-label="Logo">Daniels</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link text-dark active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#works">Works</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#clients">Clients</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark active" href="#home"
+                            aria-label="home">Home</a></li>
+                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#about"
+                            aria-label="about">About</a></li>
+                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#services"
+                            aria-label="services">Services</a></li>
+                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#works"
+                            aria-label="works">Works</a></li>
+                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#clients"
+                            aria-label="clients">Clients</a></li>
+                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#team" aria-label="team">Team</a>
+                    </li>
+                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#contact"
+                            aria-label="contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-        <header id="home" class="min-vh-100 py-5 d-flex justify-content-center align-items-center text-bg-dark">
+        <header id="home" class="home min-vh-100 py-5 d-flex justify-content-center align-items-center text-bg-dark">
             <div class="container py-5">
                 <div class="row">
                     <div class="inner text-center d-flex flex-column justify-content-center align-items-center">
                         <h5 class="display-4 fw-bold">Hello</h5>
-                        <h1 class="display-2 fw-lighter">
+                        <h1 class="display-4 fw-lighter">
                             I Am
                         </h1>
                         <ul class="social list-unstyled mt-4 d-flex gap-1">
                             <li class="rounded-circle d-flex justify-content-center align-items-center">
-                                <a href="#" class="text-decoration-none text-light">
+                                <a href="#" class="text-decoration-none text-light" aria-label="facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li class="rounded-circle d-flex justify-content-center align-items-center">
-                                <a href="#" class="text-decoration-none text-light">
+                                <a href="#" class="text-decoration-none text-light" aria-label="twitter">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
                             <li class="rounded-circle d-flex justify-content-center align-items-center">
-                                <a href="#" class="text-decoration-none text-light">
+                                <a href="#" class="text-decoration-none text-light" aria-label="linkedin">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
                             </li>
                             <li class="rounded-circle d-flex justify-content-center align-items-center">
-                                <a href="#" class="text-decoration-none text-light">
+                                <a href="#" class="text-decoration-none text-light" aria-label="behance">
                                     <i class="fab fa-behance"></i>
                                 </a>
                             </li>
                             <li class="rounded-circle d-flex justify-content-center align-items-center">
-                                <a href="#" class="text-decoration-none text-light">
+                                <a href="#" class="text-decoration-none text-light" aria-label="youtube">
                                     <i class="fab fa-youtube"></i>
                                 </a>
                             </li>
@@ -88,16 +95,18 @@
                 </div>
             </div>
         </header>
-        <section id="about" class="py-5">
+        <section id="about" class="about py-5">
             <div class="container py-5">
-                <div class="row">
-                    <div class="col-12 col-lg-4 about-img position-relative mb-5 mb-lg-0 text-center">
-                        <picture>
-                            <img src="./images/hero.jpg" alt="about-img" class="img-fluid">
-                        </picture>
+                <div class="row gy-5">
+                    <div class="col-12 col-lg-4 text-center">
+                        <div class="image position-relative">
+                            <img src="./images/hero.jpg" alt="" class="w-100">
+                        </div>
+
                     </div>
+
                     <div class="col-12 col-lg-8">
-                        <h3 class="text-capitalize h2 fw-bold mb-1">about me.</h3>
+                        <h2 class="text-capitalize h2 fw-bold mb-1">about me.</h2>
                         <span class="sub-title">
                             UI / UX Designer & Web Developer
                         </span>
@@ -140,8 +149,8 @@
                             </div>
                         </div>
                         <div class="action mt-5">
-                            <a href="#" class="btn btn-dark">Download C.V</a>
-                            <a href="#" class="btn btn-outline-dark">Contact Me</a>
+                            <a href="#" class="btn btn-dark" aria-label="download cv">Download C.V</a>
+                            <a href="#" class="btn btn-outline-dark" aria-label="contact me">Contact Me</a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +158,7 @@
 
 
         </section>
-        <section id="services" class="py-5 bg-gray">
+        <section id="services" class="services py-5 bg-gray">
 
             <div class="container py-5">
                 <h3 class="text-capitalize display-5 main-title position-relative m-auto mb-5">services.</h3>
@@ -229,7 +238,7 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="py-5">
+        <section id="portfolio" class="portfolio py-5">
             <h3 class="text-capitalize display-5 main-title position-relative m-auto mb-5">portfolio.</h3>
             <div class="container">
                 <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
@@ -259,96 +268,96 @@
                         aria-labelledby="pills-all-tab" tabindex="0">
                         <!-- All -->
                         <div class="row gy-4">
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/1.jpg" alt="portfolio-1" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/2.jpg" alt="portfolio-2" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/3.jpg" alt="portfolio-3" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/4.jpg" alt="portfolio-4" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/5.jpg" alt="portfolio-5" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/6.jpg" alt="portfolio-6" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
@@ -360,32 +369,32 @@
                     <div class="tab-pane fade" id="pills-brand" role="tabpanel" aria-labelledby="pills-brand-tab"
                         tabindex="0">
                         <div class="row gy-4">
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/4.jpg" alt="portfolio-4" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/6.jpg" alt="portfolio-6" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
@@ -399,32 +408,32 @@
                     <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab"
                         tabindex="0">
                         <div class="row gy-4">
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/2.jpg" alt="portfolio-2" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/5.jpg" alt="portfolio-5" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
@@ -438,48 +447,48 @@
                     <div class="tab-pane fade" id="pills-graphic" role="tabpanel" aria-labelledby="pills-graphic-tab"
                         tabindex="0">
                         <div class="row gy-4">
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/1.jpg" alt="portfolio-1" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/3.jpg" alt="portfolio-3" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
                                     <img src="./images/portfolio/5.jpg" alt="portfolio-5" class="img-fluid">
                                     <div class="item-overlay">
-                                        <h6 class="text-capitalize fw-semibold">web design</h6>
+                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#">
+                                            <a href="#" aria-label="link">
                                                 <i class="fa fa-chain-broken"></i>
                                             </a>
-                                            <a href="#">
+                                            <a href="#" aria-label="search">
                                                 <i class="fa fa-search-plus"></i>
                                             </a>
                                         </div>
@@ -492,23 +501,8 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="item position-relative">
-                <img src="./images/portfolio/1.jpg" alt="" class="img-fluid">
-                <div class="item-overlay">
-                    <h6 class="text-capitalize fw-semibold">web design</h6>
-                    <div class="icons d-flex gap-2">
-                        <a href="#">
-                            <i class="fa fa-chain-broken"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-search-plus"></i>
-                        </a>
-                    </div>
-                </div>
-            </div> -->
         </section>
-        <section id="works" class="py-5 bg-gray">
+        <section id="works" class="works py-5 bg-gray">
             <h3 class="text-capitalize display-5 main-title position-relative m-auto mb-5">Testimonials.</h3>
             <div class="container">
                 <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
@@ -524,7 +518,7 @@
                                     since the when an unknown printer took a galley of type and
                                     scrambled it to make a type specimen book.
                                 </p>
-                                <h6 class="name text-dark fw-bold mt-3">Alex smith</h6>
+                                <h4 class="h6 name text-dark fw-bold mt-3">Alex smith</h4>
                                 <span class="description">Envato Customer</span>
                             </div>
                         </div>
@@ -539,7 +533,7 @@
                                     since the when an unknown printer took a galley of type and
                                     scrambled it to make a type specimen book.
                                 </p>
-                                <h6 class="name text-dark fw-bold mt-3">Alex smith</h6>
+                                <h4 class="h6 name text-dark fw-bold mt-3">Alex smith</h4>
                                 <span class="description">Envato Customer</span>
                             </div>
                         </div>
@@ -554,7 +548,7 @@
                                     since the when an unknown printer took a galley of type and
                                     scrambled it to make a type specimen book.
                                 </p>
-                                <h6 class="name text-dark fw-bold mt-3">Alex smith</h6>
+                                <h4 class="h6 name text-dark fw-bold mt-3">Alex smith</h4>
                                 <span class="description">Envato Customer</span>
                             </div>
                         </div>
@@ -571,9 +565,9 @@
                 </div>
             </div>
         </section>
-        <section id="clients" class="py-5">
+        <section id="clients" class="clients py-5">
             <div class="container py-5">
-                <div class="row">
+                <div class="row gy-5">
                     <div class="col-12 col-lg-3">
                         <div class="inner text-center d-flex flex-column align-items-center">
                             <span
@@ -618,33 +612,33 @@
                 </div>
             </div>
         </section>
-        <section id="team" class="py-5 bg-gray">
+        <section id="team" class="team py-5 bg-gray">
             <h3 class="text-capitalize display-5 main-title position-relative m-auto mb-5">Our Team.</h3>
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-4">
+                <div class="row gy-5">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="inner">
                             <div class="image position-relative overflow-hidden">
                                 <img src="./images/1.jpg" alt="team-1" class="w-100">
                                 <div class="social position-absolute d-flex justify-content-center align-items-center">
                                     <ul class="list-unstyled d-flex gap-2">
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="facebook">
                                                 <i class="fa-brands fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="twitter">
                                                 <i class="fa-brands fa-twitter"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="pinterest">
                                                 <i class="fa-brands fa-pinterest"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="linkin in">
                                                 <i class="fa-brands fa-linkedin-in"></i>
                                             </a>
                                         </li>
@@ -659,29 +653,29 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="inner">
                             <div class="image position-relative overflow-hidden">
                                 <img src="./images/2.jpg" alt="team-2" class="w-100">
                                 <div class="social position-absolute d-flex justify-content-center align-items-center">
                                     <ul class="list-unstyled d-flex gap-2">
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="facebbok">
                                                 <i class="fa-brands fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="twitter">
                                                 <i class="fa-brands fa-twitter"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="pinterest">
                                                 <i class="fa-brands fa-pinterest"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="linkedin">
                                                 <i class="fa-brands fa-linkedin-in"></i>
                                             </a>
                                         </li>
@@ -696,29 +690,29 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="inner">
                             <div class="image position-relative overflow-hidden">
                                 <img src="./images/1.jpg" alt="team-3" class="w-100">
                                 <div class="social position-absolute d-flex justify-content-center align-items-center">
                                     <ul class="list-unstyled d-flex gap-2">
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="facebbok">
                                                 <i class="fa-brands fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="twitter">
                                                 <i class="fa-brands fa-twitter"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="pinterest">
                                                 <i class="fa-brands fa-pinterest"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="icon text-decoration-none">
+                                            <a href="#" class="icon text-decoration-none" aria-label="linkedin">
                                                 <i class="fa-brands fa-linkedin-in"></i>
                                             </a>
                                         </li>
@@ -737,34 +731,34 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="py-5">
+        <section id="contact" class="contact py-5">
             <h3 class="text-capitalize display-5 main-title position-relative m-auto mb-5">contact us.</h3>
             <div class="container pt-5">
-                <div class="row info">
-                    <div class="col col-lg-4">
+                <div class="row info gy-5">
+                    <div class="col-md-4">
                         <div class="inner d-flex flex-column justify-content-center align-items-center">
                             <div class="icon fs-3 mb-4 d-flex justify-content-center align-items-center rounded-circle">
                                 <i class="fa fa-location-arrow" aria-hidden="true"></i>
                             </div>
-                            <h6 class="fw-bold fs-5">Address</h6>
-                            <p>6834 Hollywood Blvd - Los Angeles CA</p>
+                            <h4 class="h6 fw-bold fs-5">Address</h4>
+                            <p class="text-center">6834 Hollywood Blvd - Los Angeles CA</p>
                         </div>
                     </div>
-                    <div class="col col-lg-4">
+                    <div class="col-md-4">
                         <div class="inner d-flex flex-column justify-content-center align-items-center">
                             <div class="icon fs-3 mb-4 d-flex justify-content-center align-items-center rounded-circle">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                             </div>
-                            <h6 class="fw-bold fs-5">Email</h6>
+                            <h4 class="h6 fw-bold fs-5">Email</h4>
                             <p>Support@website.com</p>
                         </div>
                     </div>
-                    <div class="col col-lg-4">
+                    <div class="col-md-4">
                         <div class="inner d-flex flex-column justify-content-center align-items-center">
                             <div class="icon fs-3 mb-4 d-flex justify-content-center align-items-center rounded-circle">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                             </div>
-                            <h6 class="fw-bold fs-5">Phone</h6>
+                            <h4 class="h6 fw-bold fs-5">Phone</h4>
                             <p>+20 112 9569 3575</p>
                         </div>
                     </div>
@@ -800,7 +794,7 @@
     <footer class="py-5">
         <div class="container text-center">
             <div class="row">
-                <p>Copy Right 2024 © By Yassin Gamal All Rights Reserved</p>
+                <p class="text-light">Copy Right 2024 © By Yassin Gamal All Rights Reserved</p>
             </div>
         </div>
     </footer>
