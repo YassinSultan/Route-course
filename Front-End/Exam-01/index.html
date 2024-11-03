@@ -27,7 +27,7 @@
 
 <body data-bs-spy="scroll" data-bs-target="#topNavbar">
     <a href="#" aria-label="link"></a>
-    <nav id="topNavbar" class="navbar navbar-expand-lg py-2 navbar-light bg-white fixed-top">
+    <nav id="topNavbar" class="navbar navbar-expand-lg py-2 navbar-light bg-white fixed-top shadow-lg">
         <div class="container">
             <a class="navbar-brand fw-bold text-uppercase" href="#" aria-label="Logo">Daniels</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
@@ -36,20 +36,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
-                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark active" href="#home"
+                    <li class="nav-item p-2"><a
+                            class="nav-link position-relative overflow-hidden m-auto p-0 text-dark active" href="#home"
                             aria-label="home">Home</a></li>
-                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#about"
-                            aria-label="about">About</a></li>
-                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#services"
-                            aria-label="services">Services</a></li>
-                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#works"
-                            aria-label="works">Works</a></li>
-                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#clients"
-                            aria-label="clients">Clients</a></li>
-                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#team" aria-label="team">Team</a>
+                    <li class="nav-item p-2"><a class="nav-link position-relative overflow-hidden m-auto p-0 text-dark"
+                            href="#about" aria-label="about">About</a></li>
+                    <li class="nav-item p-2"><a class="nav-link position-relative overflow-hidden m-auto p-0 text-dark"
+                            href="#services" aria-label="services">Services</a></li>
+                    <li class="nav-item p-2"><a class="nav-link position-relative overflow-hidden m-auto p-0 text-dark"
+                            href="#works" aria-label="works">Works</a></li>
+                    <li class="nav-item p-2"><a class="nav-link position-relative overflow-hidden m-auto p-0 text-dark"
+                            href="#clients" aria-label="clients">Clients</a></li>
+                    <li class="nav-item p-2"><a class="nav-link position-relative overflow-hidden m-auto p-0 text-dark"
+                            href="#team" aria-label="team">Team</a>
                     </li>
-                    <li class="nav-item p-2"><a class="nav-link p-0 text-dark" href="#contact"
-                            aria-label="contact">Contact</a></li>
+                    <li class="nav-item p-2"><a class="nav-link position-relative overflow-hidden m-auto p-0 text-dark"
+                            href="#contact" aria-label="contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -60,8 +62,8 @@
                 <div class="row">
                     <div class="inner text-center d-flex flex-column justify-content-center align-items-center">
                         <h5 class="display-4 fw-bold">Hello</h5>
-                        <h1 class="display-4 fw-lighter">
-                            I Am
+                        <h1 class="display-4 text-nowrap position-relative d-flex justify-content-center">
+                            <span class="pe-2 fw-lighter">I Am</span>
                         </h1>
                         <ul class="social list-unstyled mt-4 d-flex gap-1">
                             <li class="rounded-circle d-flex justify-content-center align-items-center">
@@ -99,15 +101,15 @@
             <div class="container py-5">
                 <div class="row gy-5">
                     <div class="col-12 col-lg-4 text-center">
-                        <div class="image position-relative">
-                            <img src="./images/hero.jpg" alt="" class="w-100">
+                        <div class="image position-relative p-4 pt-0">
+                            <img src="./images/hero.webp" alt="" class="w-100">
                         </div>
 
                     </div>
 
                     <div class="col-12 col-lg-8">
                         <h2 class="text-capitalize h2 fw-bold mb-1">about me.</h2>
-                        <span class="sub-title">
+                        <span class="sub-title text-uppercase mb-5 text-secondary">
                             UI / UX Designer & Web Developer
                         </span>
                         <p class="mt-4">
@@ -168,7 +170,7 @@
                             <div class="icon fs-2 rounded-circle d-flex justify-content-center align-items-center mb-4">
                                 <i class="fas fa-laptop"></i>
                             </div>
-                            <h4 class="text-capitalize h5 mb-4">Web Design</h4>
+                            <h4 class="text-capitalize h5 mb-4 fw-bold">Web Design</h4>
                             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nisi
                                 eu lectus elementum.
                             </p>
@@ -180,7 +182,7 @@
                             <div class="icon fs-2 rounded-circle d-flex justify-content-center align-items-center mb-4">
                                 <i class="fa fa-bullhorn"></i>
                             </div>
-                            <h4 class="text-capitalize h5 mb-4">Branding</h4>
+                            <h4 class="text-capitalize h5 mb-4 fw-bold">Branding</h4>
                             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nisi
                                 eu lectus elementum.
                             </p>
@@ -192,7 +194,7 @@
                             <div class="icon fs-2 rounded-circle d-flex justify-content-center align-items-center mb-4">
                                 <i class="fa fa-umbrella"></i>
                             </div>
-                            <h4 class="text-capitalize h5 mb-4">Development</h4>
+                            <h4 class="text-capitalize h5 mb-4 fw-bold">Development</h4>
                             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nisi
                                 eu lectus elementum.
                             </p>
@@ -204,7 +206,7 @@
                             <div class="icon fs-2 rounded-circle d-flex justify-content-center align-items-center mb-4">
                                 <i class="fa-regular fa-gem"></i>
                             </div>
-                            <h4 class="text-capitalize h5 mb-4">Creative Design</h4>
+                            <h4 class="text-capitalize h5 mb-4 fw-bold">Creative Design</h4>
                             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nisi
                                 eu lectus elementum.
                             </p>
@@ -216,7 +218,7 @@
                             <div class="icon fs-2 rounded-circle d-flex justify-content-center align-items-center mb-4">
                                 <i class="fa fa-television"></i>
                             </div>
-                            <h4 class="text-capitalize h5 mb-4">Fully Responsive</h4>
+                            <h4 class="text-capitalize h5 mb-4 fw-bold">Fully Responsive</h4>
                             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nisi
                                 eu lectus elementum.
                             </p>
@@ -228,7 +230,7 @@
                             <div class="icon fs-2 rounded-circle d-flex justify-content-center align-items-center mb-4">
                                 <i class="fa fa-camera"></i>
                             </div>
-                            <h4 class="text-capitalize h5 mb-4">Retina Ready</h4>
+                            <h4 class="text-capitalize h5 mb-4 fw-bold">Retina Ready</h4>
                             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nisi
                                 eu lectus elementum.
                             </p>
@@ -243,24 +245,28 @@
             <div class="container">
                 <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
-                            aria-selected="true">All</button>
+                        <button
+                            class="nav-link position-relative overflow-hidden m-auto bg-transparent text-dark rounded-0 overflow-x-hidden overflow-y-hidden position-relative fw-bold active"
+                            id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button"
+                            role="tab" aria-controls="pills-all" aria-selected="true">All</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-brand-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-brand" type="button" role="tab" aria-controls="pills-brand"
-                            aria-selected="true">Brand</button>
+                        <button
+                            class="nav-link position-relative overflow-hidden m-auto bg-transparent text-dark rounded-0 overflow-x-hidden overflow-y-hidden position-relative fw-bold"
+                            id="pills-brand-tab" data-bs-toggle="pill" data-bs-target="#pills-brand" type="button"
+                            role="tab" aria-controls="pills-brand" aria-selected="true">Brand</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-design-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-design" type="button" role="tab" aria-controls="pills-design"
-                            aria-selected="true">Design</button>
+                        <button
+                            class="nav-link position-relative overflow-hidden m-auto bg-transparent text-dark rounded-0 overflow-x-hidden overflow-y-hidden position-relative fw-bold"
+                            id="pills-design-tab" data-bs-toggle="pill" data-bs-target="#pills-design" type="button"
+                            role="tab" aria-controls="pills-design" aria-selected="true">Design</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-graphic-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-graphic" type="button" role="tab" aria-controls="pills-graphic"
-                            aria-selected="true">Graphic</button>
+                        <button
+                            class="nav-link position-relative overflow-hidden m-auto bg-transparent text-dark rounded-0 overflow-x-hidden overflow-y-hidden position-relative fw-bold"
+                            id="pills-graphic-tab" data-bs-toggle="pill" data-bs-target="#pills-graphic" type="button"
+                            role="tab" aria-controls="pills-graphic" aria-selected="true">Graphic</button>
                     </li>
                 </ul>
                 <div class="tab-content mt-5" id="pills-tabContent">
@@ -270,15 +276,18 @@
                         <div class="row gy-4">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/1.jpg" alt="portfolio-1" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/1.webp" alt="portfolio-1" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -286,15 +295,18 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/2.jpg" alt="portfolio-2" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/2.webp" alt="portfolio-2" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -302,15 +314,18 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/3.jpg" alt="portfolio-3" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/3.webp" alt="portfolio-3" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -318,15 +333,18 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/4.jpg" alt="portfolio-4" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/4.webp" alt="portfolio-4" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -334,15 +352,18 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/5.jpg" alt="portfolio-5" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/5.webp" alt="portfolio-5" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -350,15 +371,18 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/6.jpg" alt="portfolio-6" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/6.webp" alt="portfolio-6" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -371,15 +395,18 @@
                         <div class="row gy-4">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/4.jpg" alt="portfolio-4" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/4.webp" alt="portfolio-4" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -387,15 +414,18 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/6.jpg" alt="portfolio-6" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/6.webp" alt="portfolio-6" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -410,15 +440,18 @@
                         <div class="row gy-4">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/2.jpg" alt="portfolio-2" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/2.webp" alt="portfolio-2" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -426,15 +459,18 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/5.jpg" alt="portfolio-5" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/5.webp" alt="portfolio-5" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -449,15 +485,18 @@
                         <div class="row gy-4">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/1.jpg" alt="portfolio-1" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/1.webp" alt="portfolio-1" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -465,15 +504,18 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/3.jpg" alt="portfolio-3" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/3.webp" alt="portfolio-3" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -481,15 +523,18 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="item position-relative">
-                                    <img src="./images/portfolio/5.jpg" alt="portfolio-5" class="img-fluid">
-                                    <div class="item-overlay">
-                                        <h4 class="h6 text-capitalize fw-semibold">web design</h4>
+                                    <img src="./images/portfolio/5.webp" alt="portfolio-5" class="img-fluid">
+                                    <div
+                                        class="item-overlay d-flex flex-column justify-content-center align-items-center position-absolute bg-opacity-75 bg-light ">
+                                        <h4 class="h6 text-uppercase fw-semibold">web design</h4>
                                         <div class="icons d-flex gap-2">
-                                            <a href="#" aria-label="link">
-                                                <i class="fa fa-chain-broken"></i>
+                                            <a href="#" aria-label="link"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-chain-broken fa-xs"></i>
                                             </a>
-                                            <a href="#" aria-label="search">
-                                                <i class="fa fa-search-plus"></i>
+                                            <a href="#" aria-label="search"
+                                                class="d-flex justify-content-center align-items-center rounded-circle">
+                                                <i class="fa fa-search-plus fa-xs"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -509,7 +554,7 @@
                     <div class="carousel-inner pt-4">
                         <div class="carousel-item active" data-bs-interval="5000">
                             <div class="image text-center">
-                                <img src="./images/testi-1.jpg" alt="testimonial-1" class="img-fluid  rounded-circle">
+                                <img src="./images/testi-1.webp" alt="testimonial-1" class="img-fluid  rounded-circle">
                             </div>
                             <div
                                 class="carousel-caption position-static d-flex flex-column justify-content-center align-items-center">
@@ -524,7 +569,7 @@
                         </div>
                         <div class="carousel-item" data-bs-interval="5000">
                             <div class="image text-center">
-                                <img src="./images/testi-2.jpg" alt="testimonial-2" class="img-fluid  rounded-circle">
+                                <img src="./images/testi-2.webp" alt="testimonial-2" class="img-fluid  rounded-circle">
                             </div>
                             <div
                                 class="carousel-caption position-static d-flex flex-column justify-content-center align-items-center">
@@ -539,7 +584,7 @@
                         </div>
                         <div class="carousel-item" data-bs-interval="5000">
                             <div class="image text-center">
-                                <img src="./images/testi-3.jpg" alt="testimonial-3" class="img-fluid  rounded-circle">
+                                <img src="./images/testi-3.webp" alt="testimonial-3" class="img-fluid  rounded-circle">
                             </div>
                             <div
                                 class="carousel-caption position-static d-flex flex-column justify-content-center align-items-center">
@@ -574,7 +619,7 @@
                                 class="icon d-block mb-2 rounded-circle d-flex justify-content-center align-items-center fs-1 mb-4">
                                 <i class="fa fa-users" aria-hidden="true"></i>
                             </span>
-                            <h3 class="counter fw-bold mb-1">850</h3>
+                            <h3 class="counter fw-bolder mb-1">850</h3>
                             <p class="description fw-bold">Happy Customers</p>
                         </div>
                     </div>
@@ -585,7 +630,7 @@
                                 <i class="fa fa-thumbs-up" aria-hidden="true"></i>
 
                             </span>
-                            <h3 class="counter fw-bold mb-1">230</h3>
+                            <h3 class="counter fw-bolder mb-1">230</h3>
                             <p class="description fw-bold">Complete Projects</p>
                         </div>
                     </div>
@@ -595,7 +640,7 @@
                                 class="icon d-block mb-2 rounded-circle d-flex justify-content-center align-items-center fs-1 mb-4">
                                 <i class="fa fa-bullhorn" aria-hidden="true"></i>
                             </span>
-                            <h3 class="counter fw-bold mb-1">9450</h3>
+                            <h3 class="counter fw-bolder mb-1">9450</h3>
                             <p class="description fw-bold">Lines Of Code</p>
                         </div>
                     </div>
@@ -605,7 +650,7 @@
                                 class="icon d-block mb-2 rounded-circle d-flex justify-content-center align-items-center fs-1 mb-4">
                                 <i class="fa fa-cloud-download" aria-hidden="true"></i>
                             </span>
-                            <h3 class="counter fw-bold mb-1">780</h3>
+                            <h3 class="counter fw-bolder mb-1">780</h3>
                             <p class="description fw-bold">Files Downloaded</p>
                         </div>
                     </div>
@@ -619,7 +664,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="inner">
                             <div class="image position-relative overflow-hidden">
-                                <img src="./images/1.jpg" alt="team-1" class="w-100">
+                                <img src="./images/1.webp" alt="team-1" class="w-100">
                                 <div class="social position-absolute d-flex justify-content-center align-items-center">
                                     <ul class="list-unstyled d-flex gap-2">
                                         <li>
@@ -646,9 +691,9 @@
                                 </div>
                             </div>
 
-                            <div class="img-desc py-3 text-center rounded-bottom-3">
-                                <h4 class="fw-bold">John Doe</h4>
-                                <h5 class="fw-bold">Front-End Developer</h5>
+                            <div class="img-desc text-light py-3 text-center rounded-bottom-3">
+                                <h4 class="fw-bolder">John Doe</h4>
+                                <h5 class="fw-semibold">Front-End Developer</h5>
                             </div>
 
                         </div>
@@ -656,7 +701,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="inner">
                             <div class="image position-relative overflow-hidden">
-                                <img src="./images/2.jpg" alt="team-2" class="w-100">
+                                <img src="./images/2.webp" alt="team-2" class="w-100">
                                 <div class="social position-absolute d-flex justify-content-center align-items-center">
                                     <ul class="list-unstyled d-flex gap-2">
                                         <li>
@@ -683,7 +728,7 @@
                                 </div>
                             </div>
 
-                            <div class="img-desc py-3 text-center rounded-bottom-3">
+                            <div class="img-desc text-light py-3 text-center rounded-bottom-3">
                                 <h4 class="fw-bold">John Doe</h4>
                                 <h5 class="fw-bold">Front-End Developer</h5>
                             </div>
@@ -693,7 +738,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="inner">
                             <div class="image position-relative overflow-hidden">
-                                <img src="./images/1.jpg" alt="team-3" class="w-100">
+                                <img src="./images/1.webp" alt="team-3" class="w-100">
                                 <div class="social position-absolute d-flex justify-content-center align-items-center">
                                     <ul class="list-unstyled d-flex gap-2">
                                         <li>
@@ -720,7 +765,7 @@
                                 </div>
                             </div>
 
-                            <div class="img-desc py-3 text-center rounded-bottom-3">
+                            <div class="img-desc text-light py-3 text-center rounded-bottom-3">
                                 <h4 class="fw-bold">John Doe</h4>
                                 <h5 class="fw-bold">Front-End Developer</h5>
                             </div>
