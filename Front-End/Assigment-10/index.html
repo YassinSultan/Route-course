@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- links bootstap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- link custom css-->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Bookmarker</title>
+</head>
+
+<body>
+    <main class="min-vh-100">
+        <div class="container pt-5">
+            <h1 class="main-title text-center position-relative m-auto z-1 display-4">Bookmarker</h1>
+
+            <div class="bookmark-body text-center py-5 mt-5">
+                <h2 class="mb-5">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="inputs-container">
+                    <div class="form-floating mb-3">
+                        <input onkeyup="checkValid(this)" type="text" class="form-control" id="siteNameInput"
+                            placeholder="Write Site Name">
+                        <label for="siteNameInput"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+                        <div class="invalid-feedback text-start">
+                            Input must contain at least 3 characters.
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input onkeyup="checkValid(this)" type="url" class="form-control" id="siteUrlInput"
+                            placeholder="Write Your URL">
+                        <label for="siteUrlInput"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                        <div class="invalid-feedback text-start">
+                            <ul>
+                                <li>Start with http:// or https://.</li>
+                                <li>Contain a valid domain (e.g., example.com).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button onclick="addSite()" class="btn btn-primary w-100 main-btn" id="addBookmarkBtn">Add
+                            Bookmark</button>
+                        <button onclick="updateSite()" class="btn btn-secondary d-none w-100"
+                            id="updateBookmarkBtn">Update
+                            Bookmark</button>
+                    </div>
+                </div>
+            </div>
+            <div class="search-container my-3 position-relative">
+                <input type="text" onkeyup="search(this)" id="searchInput" class="form-control pe-5"
+                    placeholder="Search">
+                <i class="fa-solid fa-search position-absolute top-50 end-0 translate-middle"></i>
+            </div>
+            <div class="data-container mt-2 table-responsive">
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th class="text-uppercase">#</th>
+                            <th class="text-uppercase">Site Name</th>
+                            <th class="text-uppercase">Visit</th>
+                            <th class="text-uppercase">Update</th>
+                            <th class="text-uppercase">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataTable">
+                        <!-- data will insert Here -->
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

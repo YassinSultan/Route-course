@@ -1,0 +1,70 @@
+:root {
+    --main-color: #fec260;
+    --bg-color: #F7ECDE;
+    --main-font-color: #352e28;
+    --trasition-time: 0.3s;
+    --pacifico: "Pacifico", cursive;
+    --righteous: "Righteous", sans-serif;
+}
+
+body {
+    font-family: "PT Sans Caption", sans-serif;
+    color: var(--main-font-color);
+}
+
+h1 {
+    font-family: var(--pacifico);
+    ;
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: var(--main-font-color);
+}
+
+main {
+    background-color: var(--bg-color);
+}
+
+.main-title {
+    width: fit-content;
+    color: var(--main-font-color);
+    cursor: default;
+}
+
+.main-title::before {
+    content: "";
+    width: 100%;
+    height: 40%;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    transition: all var(--trasition-time) ease;
+}
+
+.main-title:hover::before {
+    height: 60%;
+}
+
+.bookmark-body {
+    border-block: 3px dotted var(--main-font-color);
+
+}
+
+.bookmark-body h2 {
+    font-family: var(--righteous);
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+}
+
+label {
+    color: var(--main-font-color) !important;
+    opacity: 0.8;
+}
+
+.search-container {
+    width: fit-content;
+    margin: auto;
+}
