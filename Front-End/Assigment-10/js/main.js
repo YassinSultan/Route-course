@@ -100,9 +100,9 @@ function createRow(index) {
     return `<tr>
         <td>${index + 1}</td>
         <td>${dataContainer[index].siteName}</td>
-        <td><a class="btn btn-success" href="${dataContainer[index].siteUrl}" target="_blank"><i class="fa-solid fa-eye pe-2"></i>Visit</a></td>
-        <td><button onclick="updateSiteHandle(${index})" class="btn btn-warning"><i class="fa-solid fa-pen pe-2"></i>Update</button></td>
-        <td><button onclick="DeleteSite(${index})" class="btn btn-danger"><i class="fa-solid fa-trash pe-2"></i>Delete</button></td>
+        <td><a class="btn btn-success" href="${dataContainer[index].siteUrl}" target="_blank"><i class="fa-solid fa-eye pe-2 d-none d-sm-inline-block"></i>Visit</a></td>
+        <td><button onclick="updateSiteHandle(${index})" class="btn btn-warning"><i class="fa-solid fa-pen pe-2 d-none d-sm-inline-block"></i>Update</button></td>
+        <td><button onclick="DeleteSite(${index})" class="btn btn-danger"><i class="fa-solid fa-trash pe-2 d-none d-sm-inline-block"></i>Delete</button></td>
     </tr>`;
 
 }
