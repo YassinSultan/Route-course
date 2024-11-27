@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- links bootstap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- link custom css-->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="shortcut icon" href="./images/bookmark.ico" type="image/x-icon">
+    <title>Login</title>
+</head>
+
+<body class="bg-main-color overflow-hidden position-relative">
+    <div class="alert alert-danger w-100 position-absolute" role="alert" id="alertDanger">
+        Incorrect Email or Password.
+    </div>
+    <main class="min-vh-100">
+        <div class="container position-absolute top-50 start-50 translate-middle">
+            <div class="box bg-main-color shadow-lg p-3 p-md-5">
+                <h1 class="text-center mb-5 text-capitalize fw-bold main-color">Smart Login System</h1>
+                <form action="" novalidate>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com"
+                            required>
+                        <label for="emailInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+                        <label for="passwordInput">Password</label>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn main-btn w-100 fw-bold" id="loginBtn">Login</button>
+                    </div>
+                </form>
+
+                <p class="text-white text-center mt-3">Don’t have an account? <a class="text-white"
+                        href="/signup.html">Sign
+                        Up</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
