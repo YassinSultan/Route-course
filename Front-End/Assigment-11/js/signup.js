@@ -47,7 +47,7 @@ function checkValidate(e) {
 
 }
 function changerUrl() {
-    location.replace('/index.html');
+    window.location.href = '/';
 }
 function clearInputs() {
     nameInput.value = "";
