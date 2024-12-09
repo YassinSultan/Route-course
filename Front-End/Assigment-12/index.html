@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link  Merriweather Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- link swiper.js css file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- link font awesome css file -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- link bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- link my custome css file -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="https://img.icons8.com/color-glass/48/partly-cloudy-night.png" type="image/x-icon">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="loader d-flex justify-content-center align-items-center d-none" id="loader">
+        <img src="./images/loader.gif" alt="loader image">
+    </div>
+    <nav class="navbar navbar-expand-lg bg-main-color fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img width="48" height="48" src="https://img.icons8.com/color-glass/48/partly-cloudy-night.png"
+                    alt="partly-cloudy-night" />
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#dailyUpdate">Daily Update</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <header class="min-vh-100 d-flex justify-content-center align-items-center py-5">
+        <div class="container py-5">
+            <div class="row gy-4">
+                <div class="col-12 col-md-8">
+                    <div class="text-start">
+                        <h3 class="header-tagline main-font-color">Weather and Forcast</h3>
+                        <h2 class="display-2 fw-bold">Daily Weather Forecast
+                            Update News</h2>
+                        <p class="mb-5">Get the latest weather forecast for today with up-to-date
+                            information on temperature, precipitation, and more.</p>
+                        <div class="position-relative">
+                            <input type="text" class="form-control-lg w-75 rounded-end-0 border-0" id="searchInput"
+                                placeholder="Search City">
+                            <button class="btn btn-main-color position-absolute top-0 end-0 rounded-start-0 h-100 w-25"
+                                id="searchBtn">fIND</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div>
+                        <div class="box glass-box p-4 rounded-top-3">
+                            <div class="box-header d-flex justify-content-between align-items-center mb-5">
+                                <span class="country-name fs-5" id="country">London</span>
+                                <span class="weather-icon fs-5">
+                                    <img src="" alt="weather image" id="weatherImage">
+                                </span>
+                            </div>
+                            <div class="box-content mb-4">
+                                <h5 class="data h3 fw-light mb-4" id="date">Today, 04 April</h5>
+                                <h2 class="weather-temperature mb-2 display-1 position-relative" id="Temperature">24
+                                </h2>
+                                <p class="weather-info fs-4" id="weatherText">Sunny</p>
+                            </div>
+                            <div class="box-footer">
+                                <div class="datails fs-6 mb-2">
+                                    <span class="wind-info" id="windSpeed">19 km/h</span>
+                                    <span class="wind-title">wind</span>
+                                </div>
+                                <div class="datails fs-6">
+                                    <span class="hum-info" id="humTemperature">22 %</span>
+                                    <span class="hum-title">Hum</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="daily-update py-5 gray-bg" id="dailyUpdate">
+            <div class="container">
+                <div class="section-title mb-5 text-center">
+                    <h2 class="section-title text-center h1">Daily Update</h2>
+                    <p class="text-center fw-light opacity-75 mb-5">The 'Daily Update' section keeps you informed with
+                        the
+                        latest
+                        updates and
+                        highlights of the day.
+                        Stay up-to-date with essential information tailored to your interests and preferences, all in
+                        one convenient section.</p>
+                    <h3 class="country-name display-5 line line-left line-right m-auto"></h3>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper" id="dailyCards">
+
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev main-font-color"></div>
+                    <div class="swiper-button-next main-font-color"></div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- box -->
+
+    </main>
+
+
+
+
+    <!-- link swiper.js js file -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Link bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- link my js file -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+:root {
+    --main-color: #FFAD51;
+    --secondary-color: ;
+    --main-bg-color: #252222;
+    --transition-duration: 0.5s;
+    --website-font: "Merriweather", serif;
+}
+
+body {
+    color: #fff;
+    font-family: var(--website-font);
+}
+
+a {
+    color: #fff !important;
+    transition: var(--transition-duration);
+}
+
+a:hover {
+    color: var(--main-color) !important;
+}
+
+.bg-main-color {
+    background-color: var(--main-bg-color);
+}
+
+.bg-secondary-color {
+    background-color: var(--secondary-color);
+}
+
+.main-font-color {
+    color: var(--main-color) !important;
+}
+
+.secondary-font-color {
+    color: var(--secondary-color);
+}
+
+.website-font {
+    font-family: var(--website-font);
+}
+
+.gray-bg {
+    background-color: var(--main-bg-color);
+}
+
+.glass-box {
+    background: linear-gradient(180deg, rgba(56, 56, 56, 0.79) 0%, rgba(85, 85, 85, 0) 95.31%);
+    ;
+}
+
+.weather-temperature::after {
+    content: "\2103";
+    font-size: 2rem;
+    position: absolute;
+}
+
+.line {
+    position: relative;
+    width: fit-content;
+    padding: 0px 50px;
+}
+
+.line.line-left::before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.line.line-right::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+/* header */
+header {
+    background-image: url('../images/bg-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+
+header .header-tagline {
+    position: relative;
+    padding-left: 70px;
+}
+
+header .header-tagline::before {
+    content: "";
+    transform: translateY(-50%);
+    background-color: var(--main-color);
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+header .box .datails span:not(:last-child):after {
+    content: '|';
+    padding: 0px 10px;
+}
+
+.btn-main-color {
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-main-color:hover {
+    background-color: var(--main-color);
+    opacity: 0.9;
+}
+
+.btn-main-color:active {
+    background-color: var(--main-color) !important;
+    opacity: 0.9;
+}
+
+input:focus-visible {
+    outline: none;
+
+}
+
+.alert {
+    position: fixed;
+    top: 80px;
+    z-index: 999999;
+}
+
+.alert span {
+    display: inline-block;
+    border-right: 2px solid red;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 500px;
+}
+
+/* loader */
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
