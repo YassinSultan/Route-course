@@ -59,7 +59,7 @@ function getLocation() {
 async function getForcastWeather(latitude, longitude) {
     try {
         showLoader();
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=1656fd4d33494bf8be604956240512&q=29.97537517936045,31.16122224905866&days=7`);
+        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${latitude},${longitude}&days=7`);
         const data = await response.json();
         updateUI(data);
     }
