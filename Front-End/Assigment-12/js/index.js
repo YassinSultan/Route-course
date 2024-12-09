@@ -13,7 +13,7 @@ function hideLoader() {
 async function search(a) {
     try {
         showLoader();
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${a}&days=7`);
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${a}&days=7`);
         const data = await response.json();
         updateUI(data);
     }
@@ -59,7 +59,7 @@ function getLocation() {
 async function getForcastWeather(latitude, longitude) {
     try {
         showLoader();
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${latitude},${longitude}&days=7`);
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${latitude},${longitude}&days=7`);
         const data = await response.json();
         updateUI(data);
     }
