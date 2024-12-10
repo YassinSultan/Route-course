@@ -1,20 +1,106 @@
-const loader = document.getElementById('loader');
 const ApiKey = '1656fd4d33494bf8be604956240512';
-showLoader();
-getLocation();
-
+const elements = {
+    loader: document.getElementById('loader'),
+    errorElement: document.getElementById('errorElement'),
+    dailyCards: document.getElementById('dailyCards'),
+    countryName: document.querySelectorAll('.country-name'),
+    weatherImage: document.getElementById('weatherImage'),
+    currentDate: document.getElementById('date'),
+    currentTemperature: document.getElementById('Temperature'),
+    weatherText: document.getElementById('weatherText'),
+    windSpeed: document.getElementById('windSpeed'),
+    humTemperature: document.getElementById('humTemperature'),
+};
+function showError(message) {
+    elements.errorElement.textContent = message;
+    elements.errorElement.classList.remove('d-none');
+    setTimeout(() => {
+        elements.errorElement.classList.add('d-none');
+    }, 5000);
+}
+navigator.geolocation.getCurrentPosition(
+    position => {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        getForcastWeather(lat, lon);
+    },
+    error => {
+        let message = "Unable to retrieve your location!";
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                message = "Location access denied by user. Please allow location access or enter it manually.";
+                break;
+            case error.POSITION_UNAVAILABLE:
+                message = "Location information is unavailable. Try again later.";
+                break;
+            case error.TIMEOUT:
+                message = "Location request timed out. Please try again.";
+                break;
+        }
+        console.error(message);
+        showError(message);
+        getForcastWeather(51.507351, -0.127758);
+        hideLoader();
+    }
+);
 function showLoader() {
-    loader.classList.remove('d-none');
+    elements.loader.classList.remove('d-none');
 }
 function hideLoader() {
-    loader.classList.add('d-none');
+    elements.loader.classList.add('d-none');
 }
-// get location coordinates
-async function search(a) {
+function getLocation() {
+    try {
+        if (!navigator.geolocation) {
+            throw new Error('Geolocation is not supported by your browser');
+        }
+        showLoader();
+        navigator.geolocation.getCurrentPosition(position => {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            getForcastWeather(lat, lon);
+        }, error => {
+            console.error(error);
+            showError(`Unable to retrieve your location! ... Plese Add your location manually`);
+            hideLoader();
+        });
+    } catch {
+        console.error('Unable to retrieve your location.');
+    }
+}
+async function fetchData(url) {
     try {
         showLoader();
-        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${a}&days=7`);
-        const data = await response.json();
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error(error);
+        showError("An error occurred while fetching the weather data. Please try again.");
+        return null;
+    }
+    finally {
+        hideLoader();
+    }
+}
+async function getForcastWeather(latitude, longitude) {
+    try {
+        const data = await fetchData(`https://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${latitude},${longitude}&days=7`);
+        updateUI(data);
+    }
+    catch (error) {
+        console.error(error);
+    }
+}
+async function search(a) {
+    try {
+        const data = await fetchData(`https://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${a}&days=7`);
+        if (!data || data.error) {
+            showError("City not found. Please enter a valid city name.");
+            return;
+        }
         updateUI(data);
     }
     catch (error) {
@@ -32,41 +118,9 @@ document.getElementById("searchBtn").addEventListener('click', e => {
         getLocation();
     }
 });
-function getLocation() {
-    navigator.geolocation.getCurrentPosition(
-        (position) => {
-            getForcastWeather(position.coords.latitude, position.coords.longitude);
-        },
-        (error) => {
-            switch (error.code) {
-                case error.PERMISSION_DENIED:
-                    console.error("User denied the request for Geolocation.");
-                    break;
-                case error.POSITION_UNAVAILABLE:
-                    console.error("Location information is unavailable.");
-                    break;
-                case error.TIMEOUT:
-                    console.error("The request to get user location timed out.");
-                    break;
-                case error.UNKNOWN_ERROR:
-                    console.error("An unknown error occurred.");
-                    break;
-            }
-        }
-    );
-}
 
-async function getForcastWeather(latitude, longitude) {
-    try {
-        showLoader();
-        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${latitude},${longitude}&days=7`);
-        const data = await response.json();
-        updateUI(data);
-    }
-    catch (error) {
-        console.error(error);
-    }
-}
+
+
 function createDailyCard(data) {
     return `<div class="swiper-slide">
     <div class="glass-box p-5 rounded-top-3 h-100">
@@ -90,13 +144,11 @@ function updateUI(data) {
     displayDailyWeather(data.forecast);
     displayCurrentWeather(data);
     swiper.update();
-    hideLoader();
 }
 function displayDailyWeather(data) {
-    const dailyCards = document.getElementById('dailyCards');
-    dailyCards.innerHTML = '';
+    elements.dailyCards.innerHTML = '';
     data.forecastday.forEach(element => {
-        dailyCards.innerHTML += createDailyCard(element);
+        elements.dailyCards.innerHTML += createDailyCard(element);
     });;
 }
 function hundlesDate(data) {
@@ -112,24 +164,18 @@ function hundlesDate(data) {
 
 }
 function displayCurrentWeather(data) {
-    let countryName = document.querySelectorAll('.country-name');
-    let weatherImage = document.getElementById('weatherImage');
-    let currentDate = document.getElementById('date');
-    let currentTemperature = document.getElementById('Temperature');
-    let weatherText = document.getElementById('weatherText');
-    let windSpeed = document.getElementById('windSpeed');
-    let humTemperature = document.getElementById('humTemperature');
-
-    countryName.forEach((text) => {
+    elements.countryName.forEach((text) => {
         text.textContent = data.location.name;
     });
-    weatherImage.src = `https:${data.current.condition.icon}`;
-    currentDate.textContent = hundlesDate(data.location.localtime);
-    currentTemperature.textContent = `${Math.round(Math.round(data.current.temp_c))}`;
-    weatherText.textContent = data.current.condition.text;
-    windSpeed.textContent = `${data.current.wind_kph} km/h`;
-    humTemperature.textContent = `${data.current.humidity}%`;
+    elements.weatherImage.src = `https:${data.current.condition.icon}`;
+    elements.currentDate.textContent = hundlesDate(data.location.localtime);
+    elements.currentTemperature.textContent = `${Math.round(Math.round(data.current.temp_c))}`;
+    elements.weatherText.textContent = data.current.condition.text;
+    elements.windSpeed.textContent = `${data.current.wind_kph} km/h`;
+    elements.humTemperature.textContent = `${data.current.humidity}%`;
 };
+// initialize Application
+getLocation();
 
 // =========== Swiper Initialize ==============
 const swiper = new Swiper('.swiper', {

@@ -25,9 +25,15 @@
 </head>
 
 <body>
-    <div class="loader d-flex justify-content-center align-items-center d-none" id="loader">
+    <!-- error -->
+    <div class="alert alert-danger d-none" id="errorElement">
+        sadasd
+    </div>
+    <!-- Loader -->
+    <div class="loader d-flex justify-content-center align-items-center" id="loader">
         <img src="./images/loader.gif" alt="loader image">
     </div>
+    <!-- start page -->
     <nav class="navbar navbar-expand-lg bg-main-color fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -78,7 +84,8 @@
                             <div class="box-header d-flex justify-content-between align-items-center mb-5">
                                 <span class="country-name fs-5" id="country">London</span>
                                 <span class="weather-icon fs-5">
-                                    <img src="" alt="weather image" id="weatherImage">
+                                    <img src="https://cdn.weatherapi.com/weather/64x64/night/122.png"
+                                        alt="weather image" id="weatherImage">
                                 </span>
                             </div>
                             <div class="box-content mb-4">
@@ -116,7 +123,7 @@
                         highlights of the day.
                         Stay up-to-date with essential information tailored to your interests and preferences, all in
                         one convenient section.</p>
-                    <h3 class="country-name display-5 line line-left line-right m-auto"></h3>
+                    <h3 class="country-name display-5 line line-left line-right m-auto">London</h3>
                 </div>
                 <!-- Slider main container -->
                 <div class="swiper">
