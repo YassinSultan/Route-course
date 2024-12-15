@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the latest and most popular games at GameZone! Discover action games, categories, and more.">
+
+    <!-- link fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- link bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- link my css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/Favicon.png" type="image/x-icon">
+    <title>Game Zone</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarLinks">
+    <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content curve-box p-3">
+                <div class="modal-header d-flex justify-content-between align-items-center">
+                    <h1 class="modal-title fs-5" id="detailsModalLabel">Game Details</h1>
+                    <button type="button" class="btn main-btn" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-solid fa-circle-xmark"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container" id="game-details-container">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- lodaer -->
+    <div class="loader-container position-fixed top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+        id="loader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle r="32" cy="40" cx="40" id="test"></circle>
+            </svg>
+        </div>
+
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect height="64" width="64" y="8" x="8"></rect>
+            </svg>
+        </div>
+
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg border-bottom border-dark fixed-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand main-font main-color d-flex" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0,0,256,256">
+                    <g fill="#ff00ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(8,8)">
+                            <path
+                                d="M16,3c-7.84907,0 -14.08334,7.00737 -12.83984,15.06641c0.99549,6.45392 6.56956,10.93164 13.06445,10.93164c3.69812,0 6.66574,-1.50389 8.69922,-3.7793c2.03348,-2.2754 3.166,-5.28381 3.44531,-8.36523c0.04572,-0.50846 -0.04221,-1.13844 -0.4082,-1.65039c-0.366,-0.51195 -0.90835,-0.85326 -1.60352,-1.14258c0,-0.00065 0,-0.0013 0,-0.00195c-1.39468,-0.57899 -3.35848,-0.92158 -5.41016,-1.0293c-2.05168,-0.10771 -4.15112,0.01996 -5.79687,0.59375c-0.24406,0.0852 -0.44566,0.26159 -0.5625,0.49219c-0.60781,1.19874 -0.90431,2.82208 -0.04102,4.23047c0.08953,0.14661 0.21532,0.26769 0.36523,0.35156c1.3293,0.74128 3.06675,0.94796 4.54102,1.05859c0.46419,0.03483 0.46199,0.01062 0.84375,0.02148c-0.26605,0.39806 -0.42926,0.88919 -0.79297,1.1875c-0.7608,0.62406 -1.75421,1.03516 -3.23828,1.03516c-4.01852,0 -6.26002,-2.71489 -6.21875,-6.15234c0.04318,-3.59998 2.62382,-5.46156 4.99609,-5.84375c1.79061,-0.28853 4.15748,0.08044 6.27734,1.06055c0.20768,0.09621 0.44208,0.11827 0.66406,0.0625c0.74477,-0.18828 1.49051,-0.53003 2.07617,-1.14453c0.58566,-0.6145 0.96676,-1.4679 1.11719,-2.50977c0.04005,-0.27531 -0.03638,-0.55486 -0.21094,-0.77148c-1.63104,-2.02095 -4.8112,-3.70117 -8.9668,-3.70117zM16,5c3.34062,0 5.73134,1.33278 7.00195,2.66406c-0.1153,0.35556 -0.2167,0.75696 -0.39062,0.93945c-0.22141,0.23232 -0.55572,0.37118 -0.94336,0.49414c-2.3149,-0.976 -4.78785,-1.41568 -6.94336,-1.06836c-1.53484,0.24727 -3.10328,1.02755 -4.34375,2.24609c-0.79213,-0.08381 -1.7803,-0.70343 -2.3457,-1.75977c2.00518,-2.12815 4.79814,-3.51562 7.96484,-3.51562zM6.61914,10.30078c0.6805,0.91181 1.63516,1.29332 2.60352,1.59961c-0.65799,1.1116 -1.15711,2.36522 -1.17578,3.92188c-0.02206,1.83729 0.6529,3.49269 1.67969,4.88477c-0.3163,1.12477 -0.98643,1.84364 -1.99805,2.33789c-1.26782,-1.47431 -2.26948,-3.19359 -2.5918,-5.2832c-0.42656,-2.76451 0.19408,-5.33979 1.48242,-7.46094zM19.56641,15.00977c0.41751,-0.01044 0.84515,-0.00501 1.27539,0.01758c1.88157,0.09878 3.73873,0.4599 4.74805,0.87891c0.50383,0.20968 0.69389,0.39064 0.74414,0.46094c0.05026,0.0703 0.06325,0.0811 0.04297,0.30664c-0.23536,2.5966 -1.20961,5.065 -2.77539,6.93555c-0.50938,-0.84257 -1.17628,-1.50795 -2.00391,-2.02539c0.6194,-0.74674 1.12654,-1.55836 1.44141,-2.41211c0.11533,-0.31256 0.06744,-0.66203 -0.12773,-0.93204c-0.19516,-0.27001 -0.51197,-0.42511 -0.84493,-0.41366c0,0 -1.10736,0.03741 -2.46484,-0.06445c-1.24685,-0.09357 -2.6056,-0.3836 -3.41211,-0.74609c-0.17616,-0.46552 -0.14303,-0.99664 0.04883,-1.54492c0.90952,-0.25818 2.0756,-0.42963 3.32813,-0.46094zM11.14453,22.1582c1.36793,1.08088 3.04912,1.8418 5.12109,1.8418c1.53824,0 2.7677,-0.45473 3.79883,-1.09766c0.92895,0.38271 1.56442,1.05398 2.03125,1.97656c-1.55131,1.22728 -3.39557,2.11914 -5.87109,2.11914c-2.74526,0 -5.25305,-0.92247 -7.20703,-2.49414c0.94051,-0.58612 1.6461,-1.36146 2.12695,-2.3457z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                GAMEZONE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbarLinks">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categorySection">Games Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#popularSection">Popular Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#filterSection">Filter Games</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header section -->
+    <header class="min-vh-100 d-flex justify-content-center align-items-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1 class="display-1 fw-bold main-font secondary-color w-100">Welcome To The Gaming World</h1>
+                    <p class="text-secondary w-100">Welcome to <span class="fw-bold">Game Zone</span> your ultimate
+                        destination for fun and excitement! Discover the latest games, top-rated adventures, and
+                        thrilling challenges across all categories. Start playing now and share the joy of gaming with
+                        your friends. Let the adventure begin!</p>
+                    <a href="#filterSection" class="btn main-btn">Descover</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="category-section py-5" id="categorySection">
+            <h2 class="section-title text-center main-font display-5 fw-normal mb-5">Games Category</h2>
+            <div class="container-fluid">
+                <div class="swiper">
+                    <div class="swiper-wrapper" id="categorySwiper">
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+        <section class="popularity-section py-5" id="popularSection">
+            <h2 class="section-title text-center main-font display-5 fw-normal mb-5">Popular Games</h2>
+            <div class="container">
+                <div class="row gy-4" id="popularGames">
+                </div>
+            </div>
+        </section>
+        <section class="filter-section py-5" id="filterSection">
+
+            <div class="container">
+
+                <div class="section-header d-flex align-items-center justify-content-between mb-5">
+                    <h2 class="section-title main-font display-5 fw-normal">Filter Games</h2>
+                    <div class="dropdown">
+                        <button class="btn main-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-filter"></i>
+                        </button>
+                        <ul class="dropdown-menu" id="filterMenu">
+                            <li><a class="dropdown-item" href="#" category="All Games">All Games</a></li>
+                            <li><a class="dropdown-item" href="#" category="Shooter">Shooter</a></li>
+                            <li><a class="dropdown-item" href="#" category="MMORPG">MMORPG</a></li>
+                            <li><a class="dropdown-item" href="#" category="MOBA">MOBA</a></li>
+                            <li><a class="dropdown-item" href="#" category="Anime">Anime</a></li>
+                            <li><a class="dropdown-item" href="#" category="battle-royale">battle-royale</a></li>
+                            <li><a class="dropdown-item" href="#" category="Strategy">Strategy</a></li>
+                            <li><a class="dropdown-item" href="#" category="Fantasy">Fantasy</a></li>
+                            <li><a class="dropdown-item" href="#" category="Sci-Fi">Sci-Fi</a></li>
+                            <li><a class="dropdown-item" href="#" category="card">card</a></li>
+                            <li><a class="dropdown-item" href="#" category="Racing">Racing</a></li>
+                            <li><a class="dropdown-item" href="#" category="Fighting">Fighting</a></li>
+                            <li><a class="dropdown-item" href="#" category="Social">Social</a></li>
+                            <li><a class="dropdown-item" href="#" category="Sports">Sports</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h5 class="filter-name text-capitalize" id="filterName">All Games</h5>
+                <!-- Slider main container -->
+                <div class="swiper" id="filterSwiper">
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper mb-3" id="filter-swiper">
+                        <!-- Slides -->
+                        <div class="swiper-slide h-auto">
+                            <div class="card h-100 d-flex flex-column">
+                                <img src="./images/header-bg.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tarisland</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-footer p-0">
+                                    <div class="action px-3 py-2">
+                                        <a href="#" class="btn main-btn mt-auto">Show Details</a>
+                                    </div>
+                                    <div class="tags-container  d-flex justify-content-between px-3 py-2">
+                                        <span class="game-category text-uppercase">MMORPG</span>
+                                        <span class="game-platform">PC (Windows)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination position-static" id="filterPagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-2">
+        <div class="container">
+            <div class="brand text-center">
+                <div class="image">
+                    <img src="images/Favicon.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="brand-name main-font">
+                    <h2 class="text-uppercase">gamezone</h2>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>&#xa9; 2023 GameZone. All rights reserved by <span>Yassin Gamal</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- link bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- link swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- link my js -->
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
