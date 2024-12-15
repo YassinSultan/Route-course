@@ -110,15 +110,15 @@ export class Ui {
                     <div class="col-12 col-md-8">
                         <h3 class="game-tilte h1">${data.title}</h3>
                         <ul class="list-unstyled">
-                            <li>
-                                platform : <span class="badge bg-danger">${data.platform}</span>
+                            <li class="mb-3">
+                                platform : <span class="badge tag">${data.platform}</span>
 
                             </li>
-                            <li>
-                                Category : <span class="badge bg-danger">${data.genre}</span>
+                            <li class="mb-3">
+                                Category : <span class="badge tag">${data.genre}</span>
                             </li>
-                            <li>
-                                status : <span class="badge bg-danger">${data.status}</span>
+                            <li class="mb-3">
+                                status : <span class="badge tag">${data.status}</span>
                             </li>
                         </ul>
                         <p>${data.description}</p>
