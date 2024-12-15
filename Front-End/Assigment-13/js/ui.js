@@ -17,7 +17,7 @@ export class Ui {
                     <div class="category-card p-2 position-relative">
                         <div class="card-inner p-2">
                             <div class="category-image mb-4">
-                                <img src="${item.categoryThumbnail}" alt="${item.categoryName} Thumbnail" class="img-fluid w-100">
+                                <img src="${item.categoryThumbnail}" alt="${item.categoryName} Thumbnail" class="img-fluid w-100" loading="lazy">
                             </div>
                             <h3 class="category-name h5">
                                 ${item.categoryName}
@@ -44,7 +44,7 @@ export class Ui {
                     <div class="col-12 col-md-4">
                         <div class="curve-box game-card p-4 position-relative">
                             <div class="image mb-3">
-                                <img src="${data[i].thumbnail}" alt="${data[i].title} image" class="img-fluid w-100">
+                                <img src="${data[i].thumbnail}" alt="${data[i].title} image" class="img-fluid w-100" loading="lazy">
                             </div>
                             <div class="content flex-grow-1">
                                 <div class="d-flex justify-content-between">
@@ -81,7 +81,7 @@ export class Ui {
             }
             container += `<div class="swiper-slide h-auto">
                             <div class="card game-card h-100 d-flex flex-column">
-                                <img src="${item.thumbnail}" class="card-img-top" alt="${item.title} thumbnail">
+                                <img src="${item.thumbnail}" class="card-img-top" alt="${item.title} thumbnail" loading="lazy">
                                 <div class="card-body">
                                     <h5 class="card-title">${item.title}</h5>
                                     <p class="card-text">${this.truncateText(item.short_description, 10)}</p>
@@ -105,7 +105,7 @@ export class Ui {
     displayDetails(data) {
         let container = `<div class="row">
                     <div class="col-12 col-md-4">
-                        <img src="${data.thumbnail}" alt="Game Image" class="img-fluid">
+                        <img src="${data.thumbnail}" alt="Game Image" class="img-fluid" loading="lazy">
                     </div>
                     <div class="col-12 col-md-8">
                         <h3 class="game-tilte h1">${data.title}</h3>
