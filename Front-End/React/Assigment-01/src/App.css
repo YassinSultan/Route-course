@@ -1,0 +1,34 @@
+:root {
+  --main-bg-color: #2C3E50;
+  --secondary-bg-color: #1BBC9C;
+  --third-bg-color: #1A252F;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.main-bg-color {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg-color {
+  background-color: var(--secondary-bg-color);
+}
+
+.nav-link.active {
+  background-color: var(--secondary-bg-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.third-bg-color {
+  background-color: var(--third-bg-color);
+}
