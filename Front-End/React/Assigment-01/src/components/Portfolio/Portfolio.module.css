@@ -1,0 +1,13 @@
+.inner .overlay {
+    opacity: 0;
+    background-color: #1abc9ce6;
+    transition: all 0.5s ease;
+}
+
+.inner:hover .overlay {
+    opacity: 1;
+}
+
+.modal {
+    z-index: 9999;
+}
