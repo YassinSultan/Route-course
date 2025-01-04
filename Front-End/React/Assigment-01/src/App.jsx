@@ -16,11 +16,11 @@ let routes = createHashRouter([
         element: <About />,
       },
       {
-        path: "portfolio", // بدون شرطة بداية
+        path: "portfolio",
         element: <Portfolio />,
       },
       {
-        path: "contact", // بدون شرطة بداية
+        path: "contact",
         element: <Contact />,
       },
       {
