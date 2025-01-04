@@ -15,54 +15,24 @@ Here are the links to my assignments:
 
 ### Front-End Assignments:
 - 🔗 [Assignment 01: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-01/)
-  <details>
-    <summary>screenshot</summary>
-    <img src="./Front-End/Assigment-01/screenshot01.png">
-  </details>
-
-    
 - 🔗 [Assignment 02: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-02/)
-  <details>
-    <summary>screenshot</summary>
-    <img src="./Front-End/Assigment-02/screenshot01.png">
-  </details>
- 
-    
 - 🔗 [Assignment 03: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-03/)
-  <details>
-    <summary>screenshot</summary>
-    <img src="./Front-End/Assigment-03/screenshot01.png">
-  </details>
- 
-    
 - 🔗 [Assignment 04: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-04/)
-  <details>
-    <summary>screenshot</summary>
-    <img src="./Front-End/Assigment-04/screenshot01.png">
-  </details>
-
-    
 - 🔗 [Assignment 05: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-05/)
-  <details>
-    <summary>screenshot light laptop</summary>
-    <img src="./Front-End/Assigment-05/screenshot01.png">
-  </details>
-  <details>
-    <summary>screenshot dark laptop</summary>
-    <img src="./Front-End/Assigment-05/screenshot02.png">
-  </details>
-  <details>
-    <summary>screenshot light mobile</summary>
-    <img src="./Front-End/Assigment-05/screenshot03.png">
-  </details>
-  <details>
-    <summary>screenshot dark mobile</summary>
-    <img src="./Front-End/Assigment-05/screenshot04.png">
-  </details>
-
+- 🔗 [Assignment 06: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-06/)
+- 🔗 [Assignment 07: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-07/)
+- 🔗 [Assignment 08: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-08/)
+- 🔗 [Assignment 09: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-09/)
+- 🔗 [Assignment 10: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-10/)
+- 🔗 [Assignment 11: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-11/)
+- 🔗 [Assignment 12: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-12/)
+- 🔗 [Assignment 13: Front-End](https://yassinsultan.github.io/Route-Course/Front-End/Assigment-13/)
 
 ### Back-End Assignments:
 - ❌  No Back-End assignments yet.
+
+### Exam:
+- 🔗 [Exam 01](https://yassinsultan.github.io/Route-Course/Exam-01/)
 
 ## 🛠️ Technologies Used
 - ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
