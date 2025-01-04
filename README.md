@@ -32,7 +32,7 @@ Here are the links to my assignments:
 - ❌  No Back-End assignments yet.
 
 ### Exam:
-- 🔗 [Exam 01](https://yassinsultan.github.io/Route-Course/Exam-01/)
+- 🔗 [Exam 01](https://yassinsultan.github.io/Route-Course/Front-End/Exam-01/)
 
 ## 🛠️ Technologies Used
 - ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
