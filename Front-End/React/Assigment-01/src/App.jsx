@@ -37,7 +37,7 @@ let routes = createBrowserRouter(
     },
   ],
   {
-    basename: "/Route-Course/Front-End/React/Assignment-1",
+    basename: "/Route-Course/Front-End/React/Assigment-01/",
   }
 );
 
